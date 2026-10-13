@@ -249,7 +249,7 @@ function renderChoicesPage() {
 
 function setupScrollReveal() {
   const targets = document.querySelectorAll(
-    ".card, .dilemma, .question-box, .counter-card, .stat-block, .reference-list li, .reflect-item"
+    "main h2, .card, .dilemma, .question-box, .counter-card, .stat-block, .reference-list li, .reflect-item"
   );
   if (!targets.length) {
     return;
