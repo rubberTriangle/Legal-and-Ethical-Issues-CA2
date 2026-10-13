@@ -28,7 +28,7 @@
   --no: #dc2626;           /* 4.6:1+ against white/--bg */
 
   /* layout */
-  --max-width: 720px;
+  --max-width: 1040px;
   --radius: 4px;
   --shadow-elevated: 0 12px 32px rgba(15, 23, 42, 0.28);
   --font-heading: 'EB Garamond', Georgia, 'Times New Roman', serif;
@@ -161,6 +161,21 @@ html {
   font-size: 1.1rem;
 }
 
+/* The page itself is wide now, for a more spacious, dynamic feel - but long
+   paragraphs and text-heavy cards stay capped at a comfortable reading
+   measure instead of stretching edge to edge. Headlines, the hero, the
+   counter, the two-column grid and the reference index are deliberately
+   left free to use the full width, so the layout has real rhythm instead
+   of one uniform column. */
+main .container > p,
+main .container > .page-intro,
+main .container > ul,
+.dilemma,
+.question-box,
+.stat-block {
+  max-width: 78ch;
+}
+
 /* ---------------- Header / navigation ---------------- */
 
 .site-header {
@@ -186,7 +201,7 @@ html {
 }
 
 .nav-container {
-  max-width: 960px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0.85rem 1.25rem;
   display: flex;
@@ -331,7 +346,7 @@ html {
 }
 
 .hero h1 {
-  font-size: clamp(2.1rem, 6vw, 3.4rem);
+  font-size: clamp(2.2rem, 6.5vw, 4.2rem);
   margin: 0;
 }
 
@@ -631,7 +646,7 @@ html {
 }
 
 .cookie-banner-content {
-  max-width: 960px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
