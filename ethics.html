@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js-enabled');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is Your Data That Important? — Ethical Dilemmas</title>
+<meta name="description" content="Five ethical dilemmas around consent, convenience, free services, personalisation and responsibility for online data collection.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="reading-progress" id="readingProgress"></div>
+  <div class="nav-container">
+    <a href="index.html" class="logo">🔒 Is Your Data That Important?</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="cookies.html" class="nav-link">Cookies &amp; Data</a>
+      <a href="ethics.html" class="nav-link active">Ethical Dilemmas</a>
+      <a href="law.html" class="nav-link">Law &amp; Sources</a>
+      <a href="choices.html" class="nav-link">Your Choices</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <p class="page-marker"><span class="page-marker-number">03</span><span class="page-marker-label">Ethical Dilemmas</span></p>
+    <h1>Ethical Dilemmas</h1>
+    <p class="page-intro">Not everything about data collection comes down to what's legal. Some of the hardest questions here are ethical rather than legal - about fairness, honesty and power, not just about what companies are technically allowed to do. Five of those questions are set out below. None of them have one correct answer, and that's rather the point of including them.</p>
+
+    <div id="cookieStatus" class="cookie-status"></div>
+
+    <div class="dilemma">
+      <span class="dilemma-number" aria-hidden="true">01</span>
+      <p class="dilemma-eyebrow">Dilemma</p>
+      <h2>Is Consent Really Consent?</h2>
+      <p class="scenario">If a website presents "Accept All" as a large, obvious button while "Reject" is hidden or hard to find, has the user really given meaningful consent?</p>
+      <p>Informed consent is supposed to mean a free, specific and genuinely informed choice - not just clicking whatever button is closest and easiest to reach. When a design pushes people toward one option, researchers sometimes call it a "dark pattern": a design choice that technically offers a choice while quietly making one outcome far more likely than the other.</p>
+      <p>It's worth noticing that the cookie banner on this very site makes "Accept All" the most visually prominent button too, in the same style many real websites use. Did you notice that when you first arrived? If a design decision that small can go unnoticed, it raises a genuine question about how much attention anyone realistically gives to a choice they're asked to make dozens of times a week.</p>
+    </div>
+
+    <div class="dilemma">
+      <span class="dilemma-number" aria-hidden="true">02</span>
+      <p class="dilemma-eyebrow">Dilemma</p>
+      <h2>Convenience vs Privacy</h2>
+      <p class="scenario">Would you rather spend thirty seconds managing your privacy settings, or click "Accept All" immediately?</p>
+      <p>Most people choose speed, even when they know it means giving away more than they might otherwise want to. That's not necessarily carelessness - reading a full privacy policy for every website you visit in a day would take hours nobody has. The dilemma is whether it's realistic to expect ordinary users to understand long, technical privacy policies at all, or whether the current system quietly relies on the fact that most people won't.</p>
+    </div>
+
+    <div class="dilemma">
+      <span class="dilemma-number" aria-hidden="true">03</span>
+      <p class="dilemma-eyebrow">Dilemma</p>
+      <h2>Free Services and Personal Data</h2>
+      <p class="scenario">If you don't pay money for a service, are you paying with your data instead?</p>
+      <p>This is a popular way of framing the issue, and it captures something real: many "free" platforms are funded mainly through advertising, and advertising depends on data about users. But it isn't the whole picture. Some free services rely on a small paying "premium" tier subsidising everyone else, some are funded by investors betting on future growth, and some - like open-source projects or sites funded by grants and donations - aren't built around advertising or data sales at all. The fair question isn't whether data is ever a form of payment, but whether people are told clearly enough, in any given case, what they're actually exchanging.</p>
+      <p>Paid survey and "get rewarded" platforms make this exchange explicit instead of implied. Sites such as Prolific, Survey Junkie or Swagbucks ask directly for your age, postcode, income, health conditions and shopping habits, in return for small cash payments, points or gift cards. In one sense that's more honest than a cookie banner - you know roughly what you're giving and what you're getting for it. But several major panels' own privacy policies openly state that answers may also be sold or shared with their "research clients", beyond the specific survey you agreed to answer, and in 2024 the paid-survey platform SurveyLama had the personal details of 4.4 million accounts - including names, dates of birth and home addresses - exposed in a data breach. Putting an explicit price on personal data doesn't make the dilemma disappear; it just makes it easier to see how little that data is typically worth, and how far it can still travel afterwards.</p>
+    </div>
+
+    <div class="dilemma">
+      <span class="dilemma-number" aria-hidden="true">04</span>
+      <p class="dilemma-eyebrow">Dilemma</p>
+      <h2>Personalisation vs Surveillance</h2>
+      <p class="scenario">Personalised recommendations can make a website more useful. So when does personalisation stop being helpful and start being surveillance?</p>
+      <p>A social media feed that shows you more of what you engage with, a shop that remembers your size, a search engine that ranks results based on your location, a streaming service that suggests what to watch next - all of these rely on data about your past behaviour. Used narrowly, that can feel like a genuine improvement. The same technique feels very different once it starts combining data across many unrelated services to build a detailed profile of your habits, mood, or even sensitive interests you never explicitly shared. There's no fixed line between the two - it shifts depending on how much data is used, where it came from, and whether you'd recognise the result as something you agreed to.</p>
+      <p>This isn't hypothetical. Research into real-time bidding - the automated ad auction system covered on the <a href="cookies.html">Cookies &amp; Data</a> page - has found that a single company can be permitted to share this kind of data with several thousand others at once. At that scale, "personalisation" starts to look less like a single, accountable relationship between you and one company, and more like something closer to broadcast.</p>
+    </div>
+
+    <div class="dilemma">
+      <span class="dilemma-number" aria-hidden="true">05</span>
+      <p class="dilemma-eyebrow">Dilemma</p>
+      <h2>Who Should Be Responsible?</h2>
+      <p class="scenario">When a privacy system fails, whose fault is it really?</p>
+      <p>Responsibility for online privacy is usually shared, but rarely shared evenly. Consider the different parties involved:</p>
+      <ul class="responsibility-list">
+        <li><strong>Users</strong> - expected to read policies, understand settings, and make informed choices, often under time pressure and without technical training.</li>
+        <li><strong>Websites</strong> - responsible for how they design consent flows and how much data they choose to collect in the first place.</li>
+        <li><strong>Technology companies</strong> - build the platforms, browsers and advertising infrastructure that make large-scale tracking possible.</li>
+        <li><strong>Advertisers</strong> - drive demand for detailed audience data and targeting.</li>
+        <li><strong>Governments and regulators</strong> - set the legal rules and are responsible for enforcing them.</li>
+      </ul>
+      <p>Is it reasonable to place most of the responsibility on individual users, when the systems they're navigating are often complicated by design? Or does meaningful responsibility have to sit mainly with whoever designs the system in the first place?</p>
+    </div>
+
+    <p>The next page looks at how the law - specifically GDPR and Irish/EU data protection rules - tries to answer some of these questions, and where it draws firmer lines than ethics alone can.</p>
+    <p><a href="law.html" class="btn btn-primary" style="color:#fff;">Next: Law &amp; Real-World Context</a></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Legal and Ethical Issues module project<!-- add your name and student number here --></p>
+    <p><button id="cookieSettingsLink" class="link-button" type="button">Manage cookie preferences</button></p>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <div class="cookie-banner-content">
+    <p>This site uses cookies to demonstrate how online tracking works, as part of a college project on data privacy. You can choose what you're comfortable with.</p>
+    <div class="cookie-banner-buttons">
+      <button id="acceptAllBtn" class="btn btn-primary" type="button">Accept All</button>
+      <button id="necessaryOnlyBtn" class="btn btn-secondary" type="button">Necessary Only</button>
+      <button id="managePrefsBtn" class="btn btn-text" type="button">Manage Preferences</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="prefsModalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="prefsModalTitle">
+    <h2 id="prefsModalTitle">Manage Cookie Preferences</h2>
+    <p>Choose which categories of cookies you're okay with. You can change this at any time from the link in the footer.</p>
+
+    <div class="pref-row">
+      <div>
+        <h3>Necessary</h3>
+        <p>Required for the site to work properly, including remembering your cookie choice itself. These can't be switched off.</p>
+      </div>
+      <input type="checkbox" checked disabled aria-label="Necessary cookies, always on">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Analytics</h3>
+        <p>Would normally be used to understand how visitors use a site - which pages they visit, how long they stay, and what device or browser they're using.</p>
+      </div>
+      <input type="checkbox" id="analyticsCheckbox" aria-label="Analytics cookies">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Advertising / Tracking</h3>
+        <p>Would normally be used to track behaviour across sites and build a profile for targeted advertising.</p>
+      </div>
+      <input type="checkbox" id="advertisingCheckbox" aria-label="Advertising and tracking cookies">
+    </div>
+
+    <div class="modal-buttons">
+      <button id="savePrefsBtn" class="btn btn-primary" type="button" style="background:var(--accent);border-color:var(--accent);color:#fff;">Save Preferences</button>
+      <button id="closeModalBtn" class="btn btn-text" type="button" style="color:var(--text-muted);">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

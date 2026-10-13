@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js-enabled');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is Your Data That Important? — Cookies &amp; Data</title>
+<meta name="description" content="What cookies are, the different types, and why they sit at the centre of the convenience-versus-privacy trade-off.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="reading-progress" id="readingProgress"></div>
+  <div class="nav-container">
+    <a href="index.html" class="logo">🔒 Is Your Data That Important?</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="cookies.html" class="nav-link active">Cookies &amp; Data</a>
+      <a href="ethics.html" class="nav-link">Ethical Dilemmas</a>
+      <a href="law.html" class="nav-link">Law &amp; Sources</a>
+      <a href="choices.html" class="nav-link">Your Choices</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <p class="page-marker"><span class="page-marker-number">02</span><span class="page-marker-label">Cookies &amp; Data</span></p>
+    <h1>Cookies &amp; Personal Data</h1>
+    <p class="page-intro">Cookies are small and mostly invisible, but they're one of the main ways websites collect data about you. Here's what they actually are, the main types, and why they matter more than their size suggests.</p>
+
+    <div id="cookieStatus" class="cookie-status"></div>
+
+    <h2>What Is a Cookie?</h2>
+    <p>A cookie is a small text file that a website asks your browser to store. It usually contains a small piece of information, such as a unique ID, a language preference, or whether you're logged in. Every time you load a page from that site again, your browser sends the cookie back, which is how the site "remembers" you between requests.</p>
+
+    <h2>First-Party vs Third-Party Cookies</h2>
+    <p>A <strong>first-party cookie</strong> is set by the website you're actually visiting, for its own purposes - keeping you logged in, for example. A <strong>third-party cookie</strong> is set by a different domain, usually one embedded in the page you're on, such as an advertising network, a social media "like" button, or an analytics script. Third-party cookies are what make it possible for a single advertiser to recognise you across many unrelated websites.</p>
+
+    <h2>Session vs Persistent Cookies</h2>
+    <p>A <strong>session cookie</strong> is temporary and disappears once you close your browser. A <strong>persistent cookie</strong> is set to last for a fixed period - anywhere from a few days to a few years - so the site (or a third party) can recognise you the next time you visit.</p>
+
+    <h2>Analytics Cookies</h2>
+    <p>Analytics cookies are typically used to understand how people use a site: which pages get visited, how long people stay, where they came from, and what device or browser they're using. On their own, this is usually aggregated and reasonably low-risk, though it's still information collected about your specific visit.</p>
+
+    <h2>Advertising / Tracking Cookies</h2>
+    <p>Advertising and tracking cookies go further. Instead of just measuring a single site, they're often designed to follow the same device across many different websites, building up a picture of your interests over time so that ads can be targeted more precisely.</p>
+
+    <h2>Why Websites Use Them</h2>
+    <p>Some cookies exist purely so a website works properly - without them, you'd get logged out every time you clicked a link. Others exist for business reasons: analytics cookies help a company understand and improve its product, and advertising cookies are often what makes a "free" service financially viable in the first place.</p>
+
+    <h2>A Familiar Example</h2>
+    <p>You visit an online shop looking for headphones. You don't buy anything, and you move on. Later that day, on a completely different website - maybe a news site or social media - you see an advert for the exact same headphones. How did that happen?</p>
+    <p>The likely explanation is a third-party tracking cookie. The shop's page (or an ad network embedded on it) set a cookie linked to your browser. When you later visited a different site that uses the same ad network, that network recognised the cookie, matched it to your earlier browsing, and served an advert based on it. Nothing about this requires your name or email address - a cookie ID linked to a browsing pattern is often enough.</p>
+
+    <div class="card">
+      <h3>See it in action</h3>
+      <p>This is exactly what the box below simulates, based on the cookie choice you made on this site.</p>
+      <div id="adBox" class="ad-box"></div>
+    </div>
+
+    <h2>Where Does Your Data Actually Go?</h2>
+    <p>The headphones example makes it sound like just one shop and one ad network are involved. In reality, most online display advertising is sold through an automated auction called <strong>real-time bidding (RTB)</strong>, which runs in well under a second every time a page with ads loads. A "bid request" containing information about you - the page you're on, your rough location, your device, and sometimes much more - is broadcast to a long list of companies at once, all bidding for the chance to show you an ad. Even the companies that don't win the auction still receive the data in that request.</p>
+    <p>This is where "sold to hundreds of other companies" stops being a figure of speech. Research published by the Irish Council for Civil Liberties (ICCL) in 2022 found that Google alone allows up to <strong>4,698 companies</strong> to receive real-time bidding data about people in the US, and estimated that broadcasts like this happen something like <strong>178 trillion times a year</strong> across the US and Europe combined. Once that data has gone out, there's generally no reliable way to control what any of those companies do with it afterwards.</p>
+    <p>None of this means every website works this way, or that accepting cookies on this particular site does anything like it - this is a student project with no real ad auctions running. But it's a real, documented example of what "advertising cookies" can plug into at scale, and it's part of why regulators - including Ireland's own DPC - have been asked to look closely at the practice. See the <a href="law.html">Law &amp; Sources</a> page for the full reference and the ongoing legal case.</p>
+
+    <h2>Convenience vs Privacy</h2>
+    <p>Cookies aren't automatically good or bad - it depends on what they're doing and whether you understand and agreed to it. The same underlying technology can make a site more useful or less private, sometimes at the same time.</p>
+
+    <div class="two-col">
+      <div class="card card-convenience">
+        <h3>Convenience</h3>
+        <ul>
+          <li>Remembering login sessions</li>
+          <li>Remembering language or display preferences</li>
+          <li>Keeping items in a shopping cart</li>
+          <li>Personalised content and recommendations</li>
+        </ul>
+      </div>
+      <div class="card card-privacy">
+        <h3>Privacy concerns</h3>
+        <ul>
+          <li>Tracking behaviour across sites</li>
+          <li>Building profiles of individual users</li>
+          <li>Targeted advertising based on inferred interests</li>
+          <li>Sharing data with third parties</li>
+          <li>Users not fully understanding what they agreed to</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stat-block">
+      <p class="stat-number">≈244 hours</p>
+      <p class="stat-caption">a year is the widely cited estimate of how long it would take the average internet user to actually read the privacy policy of every website they visit - roughly 40 minutes a day, or about a month of full working days. Even just skimming them was estimated at around 154 hours a year.</p>
+      <p class="stat-source">McDonald &amp; Cranor, "The Cost of Reading Privacy Policies" (2008) - see <a href="law.html">Law &amp; Sources</a> for the full reference.</p>
+    </div>
+
+    <div class="question-box small">
+      <p>A cookie can store information about your preferences so a site "just works" the way you like. But should you have to understand tracking mechanisms like this before you can meaningfully agree to them?</p>
+    </div>
+
+    <p>The next page looks at questions like that one directly - the ethical dilemmas underneath the technology.</p>
+    <p><a href="ethics.html" class="btn btn-primary" style="color:#fff;">Next: Ethical Dilemmas</a></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Legal and Ethical Issues module project<!-- add your name and student number here --></p>
+    <p><button id="cookieSettingsLink" class="link-button" type="button">Manage cookie preferences</button></p>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <div class="cookie-banner-content">
+    <p>This site uses cookies to demonstrate how online tracking works, as part of a college project on data privacy. You can choose what you're comfortable with.</p>
+    <div class="cookie-banner-buttons">
+      <button id="acceptAllBtn" class="btn btn-primary" type="button">Accept All</button>
+      <button id="necessaryOnlyBtn" class="btn btn-secondary" type="button">Necessary Only</button>
+      <button id="managePrefsBtn" class="btn btn-text" type="button">Manage Preferences</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="prefsModalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="prefsModalTitle">
+    <h2 id="prefsModalTitle">Manage Cookie Preferences</h2>
+    <p>Choose which categories of cookies you're okay with. You can change this at any time from the link in the footer.</p>
+
+    <div class="pref-row">
+      <div>
+        <h3>Necessary</h3>
+        <p>Required for the site to work properly, including remembering your cookie choice itself. These can't be switched off.</p>
+      </div>
+      <input type="checkbox" checked disabled aria-label="Necessary cookies, always on">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Analytics</h3>
+        <p>Would normally be used to understand how visitors use a site - which pages they visit, how long they stay, and what device or browser they're using.</p>
+      </div>
+      <input type="checkbox" id="analyticsCheckbox" aria-label="Analytics cookies">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Advertising / Tracking</h3>
+        <p>Would normally be used to track behaviour across sites and build a profile for targeted advertising.</p>
+      </div>
+      <input type="checkbox" id="advertisingCheckbox" aria-label="Advertising and tracking cookies">
+    </div>
+
+    <div class="modal-buttons">
+      <button id="savePrefsBtn" class="btn btn-primary" type="button" style="background:var(--accent);border-color:var(--accent);color:#fff;">Save Preferences</button>
+      <button id="closeModalBtn" class="btn btn-text" type="button" style="color:var(--text-muted);">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js-enabled');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is Your Data That Important? — Home</title>
+<meta name="description" content="An academic project on cookies, online tracking and consent, made for the Legal and Ethical Issues module.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="reading-progress" id="readingProgress"></div>
+  <div class="nav-container">
+    <a href="index.html" class="logo">🔒 Is Your Data That Important?</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="cookies.html" class="nav-link">Cookies &amp; Data</a>
+      <a href="ethics.html" class="nav-link">Ethical Dilemmas</a>
+      <a href="law.html" class="nav-link">Law &amp; Sources</a>
+      <a href="choices.html" class="nav-link">Your Choices</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <p class="page-marker"><span class="page-marker-number">01</span><span class="page-marker-label">Legal &amp; Ethical Issues — Module Project</span></p>
+      <h1 class="hero-headline"><span class="line">Is Your Data</span><span class="line">That Important?</span></h1>
+      <span class="hero-rule" aria-hidden="true"></span>
+      <p class="subtitle">In a world where privacy is becoming harder to protect, are we giving our data away for free?</p>
+      <p class="page-intro">This site was built for the Legal and Ethical Issues module. It looks at one small but everyday question: what actually happens when you click "Accept" on a cookie banner, and whether most of us really understand what we've just agreed to.</p>
+      <div class="scroll-cue" aria-hidden="true"><span class="scroll-line"></span><span>Scroll</span></div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <div id="cookieStatus" class="cookie-status"></div>
+
+    <div class="counter-card">
+      <p class="counter-number" id="dataCounter">0</p>
+      <p class="counter-caption">estimated personal-data broadcasts by the real-time bidding advertising industry, worldwide, since you opened this page</p>
+      <details class="counter-details">
+        <summary>How is this estimated?</summary>
+        <p>This number isn't measured from this site or from you - it's a real published estimate, spread out over time. The Irish Council for Civil Liberties found that "real-time bidding" advertising broadcasts personal data an estimated 178 trillion times a year across the US and Europe combined, which works out to roughly 5.6 million times every second. This counter just multiplies that rate by the seconds you've spent on this page, to make an abstract number feel a bit more concrete. See <a href="law.html">Law &amp; Sources</a> for the original report.</p>
+      </details>
+    </div>
+
+    <h2>What Counts as Personal Data?</h2>
+    <p>Personal data is any information that relates to you as an identifiable person. That covers the obvious things, like your name, email address or phone number, but also things people think about less: your IP address, your location history, the device you're browsing on, and even patterns in how you use a website. Under EU law, the definition is deliberately broad, because almost anything can identify someone once it's combined with enough other information.</p>
+
+    <h2>Why Do Companies Want It?</h2>
+    <p>Data is useful. It helps companies improve their products, understand what users actually do (rather than what they say they do), and decide what to build next. It also has a more direct commercial use: targeted advertising. A lot of "free" websites and apps are only free because advertisers pay to reach specific groups of people, and that targeting depends on data about who you are and what you're interested in.</p>
+
+    <h2>How Do Websites Collect It?</h2>
+    <p>Some data collection is obvious - you type your email into a sign-up form, or your address into a delivery page. A lot of it is much less visible. Cookies and similar tracking technologies quietly note which pages you visit and for how long. Apps ask for permissions to your camera, contacts or location. Server logs record your IP address and browser automatically. And many pages load code from third parties, such as advertising networks or analytics tools, which can collect data of their own the moment the page loads - often before you've clicked anything at all.</p>
+
+    <h2>Why Cookies Matter</h2>
+    <p>Cookies are one of the oldest tracking tools on the web, and they're also the reason almost every website now greets you with a consent banner before you've even had a chance to read the headline. They're small, mostly invisible, and often not well understood - which is exactly why this project uses them as the main example throughout.</p>
+
+    <div class="card">
+      <h3>Try it yourself</h3>
+      <p>This site actually uses the cookie choice you made when you arrived (or will ask you to make one now if you haven't). The box below and the panel on other pages change depending on what you picked.</p>
+      <div id="adBox" class="ad-box"></div>
+    </div>
+
+    <h2>Why We Accept Without Reading</h2>
+    <p>Privacy policies are long, written in dense legal language, and appear at the exact moment you're trying to do something else - read an article, buy a ticket, watch a video. Faced with a wall of text and a big "Accept All" button, most people take the fast option. That's not necessarily because they don't care about privacy; it's often because the cost of reading everything, every time, feels higher than the cost of just clicking through.</p>
+
+    <h2>Convenience vs Privacy</h2>
+    <p>This trade-off runs through almost everything on this site. Cookies that remember your login or your shopping basket are genuinely convenient. Cookies that quietly build a profile of your interests for advertisers are a lot less obviously in your interest. The <a href="cookies.html">Cookies &amp; Data</a> page looks at this balance in more detail.</p>
+
+    <div class="question-box">
+      <p>How much of your personal information would you give away if you were told exactly what it was worth?</p>
+    </div>
+
+    <div class="question-box small">
+      <p>Are we making a conscious choice when we give away our data, or are we simply clicking "Accept" because it's easier?</p>
+    </div>
+
+    <p>The rest of this site works through these questions from three angles: how cookies and tracking actually work, the ethical dilemmas they raise, and what the law - specifically GDPR and Irish/EU data protection rules - actually says about it.</p>
+
+    <p><a href="cookies.html" class="btn btn-primary" style="color:#fff;">Next: Cookies &amp; Personal Data</a></p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Legal and Ethical Issues module project<!-- add your name and student number here --></p>
+    <p><button id="cookieSettingsLink" class="link-button" type="button">Manage cookie preferences</button></p>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <div class="cookie-banner-content">
+    <p>This site uses cookies to demonstrate how online tracking works, as part of a college project on data privacy. You can choose what you're comfortable with.</p>
+    <div class="cookie-banner-buttons">
+      <button id="acceptAllBtn" class="btn btn-primary" type="button">Accept All</button>
+      <button id="necessaryOnlyBtn" class="btn btn-secondary" type="button">Necessary Only</button>
+      <button id="managePrefsBtn" class="btn btn-text" type="button">Manage Preferences</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="prefsModalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="prefsModalTitle">
+    <h2 id="prefsModalTitle">Manage Cookie Preferences</h2>
+    <p>Choose which categories of cookies you're okay with. You can change this at any time from the link in the footer.</p>
+
+    <div class="pref-row">
+      <div>
+        <h3>Necessary</h3>
+        <p>Required for the site to work properly, including remembering your cookie choice itself. These can't be switched off.</p>
+      </div>
+      <input type="checkbox" checked disabled aria-label="Necessary cookies, always on">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Analytics</h3>
+        <p>Would normally be used to understand how visitors use a site - which pages they visit, how long they stay, and what device or browser they're using.</p>
+      </div>
+      <input type="checkbox" id="analyticsCheckbox" aria-label="Analytics cookies">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Advertising / Tracking</h3>
+        <p>Would normally be used to track behaviour across sites and build a profile for targeted advertising.</p>
+      </div>
+      <input type="checkbox" id="advertisingCheckbox" aria-label="Advertising and tracking cookies">
+    </div>
+
+    <div class="modal-buttons">
+      <button id="savePrefsBtn" class="btn btn-primary" type="button" style="background:var(--accent);border-color:var(--accent);color:#fff;">Save Preferences</button>
+      <button id="closeModalBtn" class="btn btn-text" type="button" style="color:var(--text-muted);">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

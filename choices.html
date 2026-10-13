@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js-enabled');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is Your Data That Important? — Your Choices</title>
+<meta name="description" content="See the cookie choice you made on this site, what those categories can mean in real websites, and reflect on whether you'd choose the same way again.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="reading-progress" id="readingProgress"></div>
+  <div class="nav-container">
+    <a href="index.html" class="logo">🔒 Is Your Data That Important?</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="cookies.html" class="nav-link">Cookies &amp; Data</a>
+      <a href="ethics.html" class="nav-link">Ethical Dilemmas</a>
+      <a href="law.html" class="nav-link">Law &amp; Sources</a>
+      <a href="choices.html" class="nav-link active">Your Choices</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <p class="page-marker"><span class="page-marker-number">05</span><span class="page-marker-label">Your Choices</span></p>
+    <h1>What Did You Actually Agree To?</h1>
+    <p class="page-intro">Right at the start, this site asked you to make a cookie choice. Here's what you actually picked, what those categories can mean on a real website, and a few questions worth sitting with before you move on.</p>
+
+    <div id="cookieStatus" class="cookie-status"></div>
+
+    <h2>Your Cookie Choices</h2>
+    <div id="choicesSummary" class="card"></div>
+
+    <h2>What These Choices Can Mean</h2>
+    <p>This site only keeps a small simulated counter and shows a mock advert elsewhere on the site - it isn't really building a profile of you or sharing anything with a third party. But the categories themselves are real, and on an actual commercial website, accepting them can mean something like this:</p>
+
+    <div class="card">
+      <h3>Analytics</h3>
+      <p>Depending on the tools a site uses, analytics cookies can be used to record things such as:</p>
+      <ul>
+        <li>Which pages you visited</li>
+        <li>How much time you spent on each page</li>
+        <li>Information about your device and browser</li>
+        <li>Your approximate location, depending on the technology used</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Advertising / Tracking</h3>
+      <p>Depending on the tools a site uses, advertising and tracking cookies can be used to record things such as:</p>
+      <ul>
+        <li>Your general browsing behaviour</li>
+        <li>Interests inferred from your activity</li>
+        <li>Your interactions with adverts</li>
+        <li>Potential tracking across multiple, otherwise unrelated websites</li>
+      </ul>
+    </div>
+
+    <p>The point of listing this out isn't to suggest that every website does all of it, or that this student site does any of it for real - it's to make the categories on a typical cookie banner feel a bit less abstract than "Analytics" and "Advertising" usually sound.</p>
+
+    <div class="question-box">
+      <p>You clicked a button. But did you really understand everything you were agreeing to?</p>
+    </div>
+
+    <h2>Would You Make the Same Choice Now?</h2>
+    <p>Click each question below to see a short reflection. There's no right answer - they're meant to prompt thinking, not to test you.</p>
+
+    <div class="reflect-item">
+      <button class="reflect-question" type="button"><span class="reflect-question-text">Did you read the cookie options before choosing?</span><span class="reflect-icon" aria-hidden="true">+</span></button>
+      <div class="reflect-answer"><p>Most people don't, and the banner on this site was deliberately built the way most real banners are - quick to click through without reading closely. If you didn't read it either, you're in good company, which is itself worth noticing.</p></div>
+    </div>
+
+    <div class="reflect-item">
+      <button class="reflect-question" type="button"><span class="reflect-question-text">Did you understand what each category meant?</span><span class="reflect-icon" aria-hidden="true">+</span></button>
+      <div class="reflect-answer"><p>Necessary cookies are usually easy to picture. Analytics and advertising cookies are more abstract - it's one thing to read the word "tracking," and another to actually picture pages visited, time spent, and inferred interests as one connected profile.</p></div>
+    </div>
+
+    <div class="reflect-item">
+      <button class="reflect-question" type="button"><span class="reflect-question-text">Did convenience influence your decision?</span><span class="reflect-icon" aria-hidden="true">+</span></button>
+      <div class="reflect-answer"><p>If it did, that's not unusual - it's the whole reason banners are designed the way they are. The more interesting question isn't whether convenience mattered, but how much it should.</p></div>
+    </div>
+
+    <div class="reflect-item">
+      <button class="reflect-question" type="button"><span class="reflect-question-text">Would you give the same information if you knew its potential value?</span><span class="reflect-icon" aria-hidden="true">+</span></button>
+      <div class="reflect-answer"><p>Personal data is genuinely valuable to advertisers, which is part of why it's collected so widely. Whether knowing a rough "price" for your own data would change your choices is a fair thing to sit with.</p></div>
+    </div>
+
+    <div class="reflect-item">
+      <button class="reflect-question" type="button"><span class="reflect-question-text">Should websites make privacy settings easier to understand?</span><span class="reflect-icon" aria-hidden="true">+</span></button>
+      <div class="reflect-answer"><p>Regulators increasingly say yes - the ePrivacy and GDPR rules covered on the <a href="law.html">Law &amp; Sources</a> page are partly aimed at exactly this. Whether cookie banners actually achieve it in practice is a separate question.</p></div>
+    </div>
+
+    <div class="reflect-item">
+      <button class="reflect-question" type="button"><span class="reflect-question-text">Is clicking "Accept All" a genuine choice?</span><span class="reflect-icon" aria-hidden="true">+</span></button>
+      <div class="reflect-answer"><p>It's a choice in the technical sense - nobody is forcing your hand. Whether it's a fully informed one, given how these banners are usually designed, is close to the heart of Dilemma 1 on the <a href="ethics.html">Ethical Dilemmas</a> page.</p></div>
+    </div>
+
+    <div class="final-reflection">
+      <p>Maybe the question is not whether our data is important.<br>Maybe the question is whether we understand what we are giving away.</p>
+    </div>
+
+    <p><button id="resetPrefsBtn" class="btn btn-secondary" type="button" style="background:var(--navy);border-color:var(--navy);">Reset my cookie preferences</button></p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Legal and Ethical Issues module project<!-- add your name and student number here --></p>
+    <p><button id="cookieSettingsLink" class="link-button" type="button">Manage cookie preferences</button></p>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner" hidden>
+  <div class="cookie-banner-content">
+    <p>This site uses cookies to demonstrate how online tracking works, as part of a college project on data privacy. You can choose what you're comfortable with.</p>
+    <div class="cookie-banner-buttons">
+      <button id="acceptAllBtn" class="btn btn-primary" type="button">Accept All</button>
+      <button id="necessaryOnlyBtn" class="btn btn-secondary" type="button">Necessary Only</button>
+      <button id="managePrefsBtn" class="btn btn-text" type="button">Manage Preferences</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="prefsModalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="prefsModalTitle">
+    <h2 id="prefsModalTitle">Manage Cookie Preferences</h2>
+    <p>Choose which categories of cookies you're okay with. You can change this at any time from the link in the footer.</p>
+
+    <div class="pref-row">
+      <div>
+        <h3>Necessary</h3>
+        <p>Required for the site to work properly, including remembering your cookie choice itself. These can't be switched off.</p>
+      </div>
+      <input type="checkbox" checked disabled aria-label="Necessary cookies, always on">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Analytics</h3>
+        <p>Would normally be used to understand how visitors use a site - which pages they visit, how long they stay, and what device or browser they're using.</p>
+      </div>
+      <input type="checkbox" id="analyticsCheckbox" aria-label="Analytics cookies">
+    </div>
+
+    <div class="pref-row">
+      <div>
+        <h3>Advertising / Tracking</h3>
+        <p>Would normally be used to track behaviour across sites and build a profile for targeted advertising.</p>
+      </div>
+      <input type="checkbox" id="advertisingCheckbox" aria-label="Advertising and tracking cookies">
+    </div>
+
+    <div class="modal-buttons">
+      <button id="savePrefsBtn" class="btn btn-primary" type="button" style="background:var(--accent);border-color:var(--accent);color:#fff;">Save Preferences</button>
+      <button id="closeModalBtn" class="btn btn-text" type="button" style="color:var(--text-muted);">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
